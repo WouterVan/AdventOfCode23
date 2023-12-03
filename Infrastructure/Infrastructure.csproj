@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+<ItemGroup>
+    <Content Include="Resources/**">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+</ItemGroup>
+<ItemGroup>
+  <None Remove="Resources\01\inputs.txt" />
+  <None Remove="Resources\02\inputs.txt" />
+  <None Remove="resources\03\inputs.txt" />
+</ItemGroup>
+<ItemGroup>
+  <Folder Include="Resources\03\" />
+</ItemGroup>
+</Project>
